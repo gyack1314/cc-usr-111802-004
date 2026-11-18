@@ -1,0 +1,315 @@
+{
+  "period": {"start": "2026-07-01", "end": "2026-09-30"},
+  "known_at": [
+    "2026-08-01T00:00:00+00:00",
+    "2026-09-01T00:00:00+00:00"
+  ],
+  "plan_arrangement": "本地全部+调水",
+  "documents": [
+    {
+      "source": "卫星机构",
+      "document_id": "tws-2026Q2",
+      "revision": "r1",
+      "received_at": "2026-07-05T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "anomaly",
+          "id": "anom-A-old",
+          "revision": "r1",
+          "valid_from": "2026-04-01",
+          "payload": {
+            "region": "district-A",
+            "period": {"start": "2026-04-01", "end": "2026-06-30"},
+            "value": -12,
+            "unit": "mm"
+          }
+        }
+      ]
+    },
+    {
+      "source": "卫星机构",
+      "document_id": "tws-2026Q3",
+      "revision": "r1",
+      "received_at": "2026-07-30T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "anomaly",
+          "id": "anom-A",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-A",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "value": -38,
+            "unit": "mm"
+          }
+        },
+        {
+          "kind": "anomaly",
+          "id": "anom-B",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-B",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "value": -45,
+            "unit": "mm"
+          }
+        },
+        {
+          "kind": "anomaly",
+          "id": "anom-C",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-C",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "value": -10,
+            "unit": "mm"
+          }
+        },
+        {
+          "kind": "anomaly",
+          "id": "anom-D",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-D",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "value": -5,
+            "unit": "mm"
+          }
+        }
+      ]
+    },
+    {
+      "source": "水厂报表",
+      "document_id": "plants-2026Q3",
+      "revision": "r1",
+      "received_at": "2026-07-29T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "plant",
+          "id": "plant-PA1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-A",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "capacity": 10,
+            "unit": "万m³/日",
+            "role": "常规"
+          }
+        },
+        {
+          "kind": "plant",
+          "id": "plant-PA2",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-A",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "capacity": 4,
+            "unit": "万m³/日",
+            "role": "备用"
+          }
+        },
+        {
+          "kind": "plant",
+          "id": "plant-PB1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-B",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "capacity": 9,
+            "unit": "万m³/日",
+            "role": "常规"
+          }
+        },
+        {
+          "kind": "plant",
+          "id": "plant-PC1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-C",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "capacity": 12,
+            "unit": "万m³/日",
+            "role": "常规"
+          }
+        },
+        {
+          "kind": "plant",
+          "id": "plant-PD1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-D",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "capacity": 10,
+            "unit": "万m³/日",
+            "role": "常规"
+          }
+        }
+      ]
+    },
+    {
+      "source": "调水运行",
+      "document_id": "transfers-2026Q3",
+      "revision": "r1",
+      "received_at": "2026-07-29T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "transfer",
+          "id": "line-T1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "from": "district-C",
+            "to": "district-B",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "capacity": 3,
+            "unit": "万m³/日",
+            "status": "启用"
+          }
+        }
+      ]
+    },
+    {
+      "source": "需水申报",
+      "document_id": "demands-2026Q3",
+      "revision": "r1",
+      "received_at": "2026-07-28T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "priority",
+          "id": "prio-A",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-A",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "unit": "万m³/日",
+            "tiers": [
+              {"level": 1, "name": "生活必需", "demand": 8, "population": 100000},
+              {"level": 2, "name": "商业服务", "demand": 3, "population": 20000},
+              {"level": 3, "name": "一般工业", "demand": 3, "population": 30000}
+            ]
+          }
+        },
+        {
+          "kind": "priority",
+          "id": "prio-B",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-B",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "unit": "万m³/日",
+            "tiers": [
+              {"level": 1, "name": "生活必需", "demand": 7, "population": 80000},
+              {"level": 2, "name": "商业服务", "demand": 3, "population": 15000},
+              {"level": 3, "name": "一般工业", "demand": 3, "population": 10000}
+            ]
+          }
+        },
+        {
+          "kind": "priority",
+          "id": "prio-C",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-C",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "unit": "万m³/日",
+            "tiers": [
+              {"level": 1, "name": "生活必需", "demand": 6, "population": 60000},
+              {"level": 2, "name": "商业服务", "demand": 2, "population": 10000}
+            ]
+          }
+        },
+        {
+          "kind": "priority",
+          "id": "prio-D",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-D",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "unit": "万m³/日",
+            "tiers": [
+              {"level": 1, "name": "生活必需", "demand": 6, "population": 50000},
+              {"level": 2, "name": "商业服务", "demand": 2, "population": 8000}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source": "卫星机构",
+      "document_id": "tws-2026Q3-fix",
+      "revision": "r1",
+      "received_at": "2026-08-15T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "anomaly",
+          "id": "anom-B",
+          "revision": "r2",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-B",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "value": null,
+            "unit": "mm",
+            "quality": "缺测"
+          }
+        }
+      ]
+    },
+    {
+      "source": "调水运行",
+      "document_id": "transfers-2026Q3-fix",
+      "revision": "r1",
+      "received_at": "2026-08-16T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "transfer",
+          "id": "line-T1",
+          "revision": "r2",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "from": "district-C",
+            "to": "district-B",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "capacity": 3,
+            "unit": "万m³/日",
+            "status": "停用"
+          }
+        }
+      ]
+    },
+    {
+      "source": "水厂报表",
+      "document_id": "plants-2026Q3-fix",
+      "revision": "r1",
+      "received_at": "2026-08-17T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "plant",
+          "id": "plant-PA1",
+          "revision": "r2",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "region": "district-A",
+            "period": {"start": "2026-07-01", "end": "2026-09-30"},
+            "capacity": 9.5,
+            "unit": "万m³/日",
+            "role": "常规"
+          }
+        }
+      ]
+    }
+  ]
+}
